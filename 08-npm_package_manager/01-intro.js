@@ -19,5 +19,11 @@ comes within that packages won't shows up (example giving , while bootstrap depe
 const _ = require('lodash'); 
 let arr = [4, [3, [2, [1, [0]]]]]; 
 console.log(`arr.length = ${arr.length} \n_.flattenDeep(arr).length = ${_.flattenDeep(arr).length}`);
-// arr.length = 2 
+// arr.length = 2
 // _.flattenDeep(arr).length = 5
+
+
+// After ignoring "node_modules" file , you can use 'npm install' to install dependencies from the package.json again.
+
+// You can install packages as dev dependencies as follows -----> 'npm install <packageName> -D' or 'npm install <packageName> --save-dev'
+// Dev dependencies oftenly are not used in production . They exist for some other development purposes such as testing.
